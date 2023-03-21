@@ -13,8 +13,12 @@ def encoder(num1):          # add 3 to each digit but make sure not more than 1 
     return "".join(encode) # join the lists together
 
 
-def decoder(num2):
-    pass
+def decoder(new):  # decoder function
+    decoded = ""
+    for num in new:
+        new_digit = str(((int(num) - 3) % 10))  # back to input numbers
+        decoded += new_digit
+    return decoded
 
 
 if __name__ == "__main__":
