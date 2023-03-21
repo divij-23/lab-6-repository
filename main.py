@@ -10,7 +10,7 @@ def encoder(num1):          # add 3 to each digit but make sure not more than 1 
         nums = (nums + 3) % 10
         nums = str(nums)
         encode.append(nums)
-    return "".join(encode)
+    return "".join(encode) # join the lists together
 
 
 def decoder(num2):
